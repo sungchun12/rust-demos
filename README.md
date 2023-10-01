@@ -1,6 +1,6 @@
 # rust-demos
 
-Build a python extension to run rust code in python.
+### Build a python extension to run rust code in python.
 
 ```shell
 # setup virtual environment
@@ -23,7 +23,7 @@ python string_sum_demo.py
 '25'
 ```
 
-# Build an executable file with rust
+### Build an executable file with rust
 
 To run Rust code, you have to install Rust on your system first. Please follow the instructions in the official Rust documentation to install it.
 
