@@ -98,13 +98,16 @@ shape: (3, 2)
 
 This will install polars and any other dependencies, then compile and run your program.
 
-6. Run the executable file
+6. Build and run the executable file
 
 ```shell
+# build executable file
 cargo build --release
 
-# example output
+# run executable file
 ./target/release/rust-demos 
+
+# example output
 shape: (3, 2)
 ┌─────────────┬─────────┐
 │ customer_id ┆ name    │
