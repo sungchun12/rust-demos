@@ -31,13 +31,17 @@ After installing Rust, you need to create a new Rust project.
 
 1.	Open the terminal and create a new project using cargo:
 
-```cargo new my_project```
+```shell
+cargo new my_project
+```
 
 Replace ﻿my_project with your desired project name.
 
 2.	Navigate to the new project directory:
 
-```cd my_project```
+```shell
+cd my_project
+```
 
 3.	Replace the contents of the ﻿src/main.rs file with your code. Your code should use the ﻿polars crate, so you'll need to import it into your project. This can be done by adding it to your ﻿Cargo.toml file:
 
@@ -72,9 +76,9 @@ fn main() -> polars::error::Result<()> {
 
 5.	Run the code from the terminal:
 
-```cargo run```
+```shell
+cargo run
 
-```
 # example output
     Finished dev [unoptimized + debuginfo] target(s) in 0.12s
      Running `target/debug/rust-demos`
@@ -93,3 +97,24 @@ shape: (3, 2)
 ```
 
 This will install polars and any other dependencies, then compile and run your program.
+
+6. Run the executable file
+
+```shell
+cargo build --release
+
+# example output
+./target/release/rust-demos 
+shape: (3, 2)
+┌─────────────┬─────────┐
+│ customer_id ┆ name    │
+│ ---         ┆ ---     │
+│ i32         ┆ str     │
+╞═════════════╪═════════╡
+│ 1           ┆ Alice   │
+├╌╌╌╌╌╌╌╌╌╌╌╌╌┼╌╌╌╌╌╌╌╌╌┤
+│ 2           ┆ Bob     │
+├╌╌╌╌╌╌╌╌╌╌╌╌╌┼╌╌╌╌╌╌╌╌╌┤
+│ 3           ┆ Charlie │
+└─────────────┴─────────┘
+```
